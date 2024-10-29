@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8; /* Color de fondo claro */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos la altura de la ventana */
+}
+
+header {
+    background-color: #2980b9; /* Azul vibrante */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block; /* Para que el enlace sea un bloque */
+}
+
+main {
+    flex: 1; /* Permite que el main ocupe el espacio restante */
+    padding: 20px;
+}
+
+#lista-pedidos {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+footer {
+    background-color: #34495e; /* Color más oscuro para el footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h4 {
+    margin: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Mejoras adicionales */
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente del título */
+    margin: 0; /* Sin margen */
+}
+
+p {
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Agregar margen inferior a los elementos del footer */
+footer p {
+    margin-bottom: 5px;
+}

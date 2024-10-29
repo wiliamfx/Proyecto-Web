@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333; 
+    background-color: #fff; 
+    scroll-behavior: smooth;
+}
+
+/* Barra de promoción dinámica */
+.promo-bar {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+    animation: move 30s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100%); 
+    }
+    50% {
+        transform: translateX(-100%); 
+    }
+    100% {
+        transform: translateX(100%); 
+    }
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    padding: 15px;
+    position: sticky; /* Cambiado de fixed a sticky */
+    top: 0; /* Mantener el encabezado en la parte superior */
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* Cambié el color del texto a un gris oscuro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección principal */
+section {
+    padding: 100px 20px 60px;
+    text-align: center;
+}
+
+#inicio {
+    background: url('imagenes/sabor-latino.png') center/cover no-repeat;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Estilos para cada sección */
+#reseña, #carta, #pedidos, #reservas {
+    background-color: rgba(241, 223, 117, 0.8);
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añadí una sombra para mayor profundidad */
+}
+
+/* Iconos en listas */
+ul li {
+    list-style: none;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+ul li::before {
+    content: "\f00c"; /* Icono de verificación (puedes cambiarlo) */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+}
+
+/* Formulario de reservas */
+form input, form select, form button, form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Añadí un borde gris claro */
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c0392b; /* Color más oscuro al pasar el ratón */
+}
+
+footer {
+    background-color: #080808; /* Color plomo para el footer */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ajuste de padding para evitar solapamiento con la barra de promoción */
+section {
+    padding-top: 60px; /* Ajuste del padding superior para evitar que el contenido se solape con la barra de promoción */
+}
+.centro {
+   padding: 15px;
+   background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+   color: black;
+   border-radius: 15px;
+}

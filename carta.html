@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta - Sabor Latino</title>
+    <link rel="stylesheet" href="carta.css">
+</head>
+<body>
+    <header>
+        <h1>Carta de Sabor Latino</h1>
+        <nav>
+            <ul>
+                <li><a href="pag.html">Inicio</a></li>
+                <li><a href="pedido.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="alitas" class="categoria">
+            <h2>Alitas</h2>
+            <div class="plato">
+                <img src="imagenes/bbq.webp" alt="Alitas">
+                <div>
+                    <h3>Alitas de Pollo</h3>
+                    <p>Alitas marinadas y fritas, servidas con salsa a elección.</p>
+                    <p><strong>Precio: $10.00</strong></p>
+                    <div class="cantidad">
+                        <input type="number" min="1" value="1" id="alitas-cantidad">
+                        <button onclick="realizarPedido('Alitas de Pollo', 10.00, document.getElementById('alitas-cantidad').value)">Realizar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hamburguesas" class="categoria">
+            <h2>Hamburguesas</h2>
+            <div class="plato">
+                <img src="imagenes/hamburguesa.avif" alt="Hamburguesa">
+                <div>
+                    <h3>Hamburguesa Clásica</h3>
+                    <p>Jugosa hamburguesa con lechuga, tomate y salsa especial.</p>
+                    <p><strong>Precio: $9.00</strong></p>
+                    <div class="cantidad">
+                        <input type="number" min="1" value="1" id="hamburguesa-cantidad">
+                        <button onclick="realizarPedido('Hamburguesa Clásica', 9.00, document.getElementById('hamburguesa-cantidad').value)">Realizar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cocteles" class="categoria">
+            <h2>Cócteles</h2>
+            <div class="plato">
+                <img src="imagenes/coctelees.webp" alt="Mojito">
+                <div>
+                    <h3>Mojito</h3>
+                    <p>Cóctel refrescante de ron, menta y limón.</p>
+                    <p><strong>Precio: $6.00</strong></p>
+                    <div class="cantidad">
+                        <input type="number" min="1" value="1" id="mojito-cantidad">
+                        <button onclick="realizarPedido('Mojito', 6.00, document.getElementById('mojito-cantidad').value)">Realizar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bebidas" class="categoria">
+            <h2>Bebidas</h2>
+            <div class="plato">
+                <img src="imagenes/bebidas.jpg" alt="Agua de Jamaica">
+                <div>
+                    <h3>Agua de Jamaica</h3>
+                    <p>Bebida fría de flor de jamaica, ideal para refrescarte.</p>
+                    <p><strong>Precio: $3.00</strong></p>
+                    <div class="cantidad">
+                        <input type="number" min="1" value="1" id="agua-jamaica-cantidad">
+                        <button onclick="realizarPedido('Agua de Jamaica', 3.00, document.getElementById('agua-jamaica-cantidad').value)">Realizar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="postres" class="categoria">
+            <h2>Postres</h2>
+            <div class="plato">
+                <img src="imagenes/postres.jpg" alt="Flan">
+                <div>
+                    <h3>Flan</h3>
+                    <p>Delicioso flan de caramelo, un clásico dulce latino.</p>
+                    <p><strong>Precio: $5.00</strong></p>
+                    <div class="cantidad">
+                        <input type="number" min="1" value="1" id="flan-cantidad">
+                        <button onclick="realizarPedido('Flan', 5.00, document.getElementById('flan-cantidad').value)">Realizar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Contacto</h4>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: info@saborlatino.com</p>
+        <p>Dirección: Huachipa - Perulandia</p>
+    </footer>
+
+    <script src="proyecto.js"></script>
+</body>
+</html>

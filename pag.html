@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restobar Sabor Latino</title>
+    <link rel="stylesheet" href="pag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="promo-bar">
+            ¡Promoción Especial! 20% de descuento en compras mayores a 200 soles 😱!.
+        </div>
+    </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#reseña">Reseñas</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="Pedido.html">Pedidos</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio">
+           <div class="centro"> 
+            <h1><b>"Bienvenidos a Sabor Latino"</b></h1>
+            <p>Disfruta de la auténtica gastronomía latina en el mejor ambiente.</p></div>
+        </section>
+
+        <!-- Sección de Reseñas -->
+        <section id="reseña">
+            <h2>Nuestras Reseñas</h2>
+            <p>En Sabor Latino, la calidad y el servicio se unen para ofrecerte una experiencia gastronómica inigualable.</p>
+            
+            <h3>Ubicación</h3>
+            <p>Estamos ubicados en el corazón de Perulandia, un lugar estratégico y accesible, cerca de las principales atracciones de la ciudad. Disfruta de una comida deliciosa mientras exploras todo lo que Perulandia tiene para ofrecer.</p>
+            <img src="https://maps.app.goo.gl/xgGhsmEy5dRrFkRp9" alt="">
+            
+            <h3>Ambiente</h3>
+            <p>Nuestro restobar te brinda un ambiente cálido y acogedor, diseñado para que te sientas como en casa. Con una decoración que celebra la rica cultura latina, cada rincón está pensado para que disfrutes de tus momentos con amigos y familia.</p>
+            
+            <h3>Opiniones de Nuestros Clientes</h3>
+            <p>“Un lugar increíble, la comida es deliciosa y el servicio es excepcional. Definitivamente volveré.” - Juan P.</p>
+            <p>“Sabor Latino es mi nuevo lugar favorito. Cada plato es una explosión de sabor y el ambiente es perfecto.” - María G.</p>
+        </section>
+        
+
+       <section>
+          <h3>Métodos de Pago</h3>
+          <p>Aceptamos tarjetas de crédito y débito, así como pagos en efectivo.</p>
+          <img src="https://incredibletravelperu.com/wp-content/uploads/2020/04/Metodos-de-pago-incredible-peru-travel.png" alt="">
+       </section>
+
+        <!-- Sección de Reservas -->
+        <section id="reservas">
+            <h2>Haz tu Reserva</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="personas">Número de Personas:</label>
+                <select id="personas" name="personas" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe un mensaje opcional"></textarea>
+
+                <button type="submit">Reservar Mesa</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Restobar Sabor Latino. Todos los derechos reservados.</p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

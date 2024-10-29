@@ -1,0 +1,99 @@
+body, html {
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    height: 100%; /* Asegura que el body y el html ocupen toda la altura de la ventana */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Alinea el contenido al centro */
+    align-items: center; /* Centra verticalmente */
+    overflow: hidden; /* Evita el desbordamiento */
+    font-weight: bold; /* Aplica negrita a todo el cuerpo */
+}
+
+.background {
+    position: fixed; /* Fija la imagen en el fondo */
+    top: 0; /* Alinea la imagen a la parte superior */
+    left: 0; /* Alinea la imagen a la parte izquierda */
+    width: 100%; /* Ocupa el 100% del ancho de la ventana */
+    height: 100%; /* Ocupa el 100% de la altura de la ventana */
+    background-image: url('imagenes/sabor-latino.png'); /* Cambia 'fondo.jpg' al nombre de tu imagen */
+    background-size: cover; /* Escala la imagen para que cubra toda la pantalla */
+    background-position: 50% 50%; /* Centra la imagen en la pantalla */
+    z-index: -1; /* Mantiene la imagen detrás de otros elementos */
+    animation: moveBackground 30s linear infinite; /* Aplica la animación */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0; /* Posición inicial */
+    }
+    50% {
+        background-position: 100% 0; /* Posición intermedia */
+    }
+    100% {
+        background-position: 0 0; /* Regresa a la posición inicial */
+    }
+}
+
+.login-container {
+    background-color: rgba(255, 252, 232, 0.7); /* Fondo blanco semi-transparente */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
+    max-width: 500px; /* Aumenta el ancho máximo del contenedor */
+    width: 90%; /* Asegura que el contenedor ocupe el 90% del ancho de la ventana */
+    height: auto; /* Ajusta la altura automáticamente */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    display: flex; /* Usar flexbox para centrar el contenido interno */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos internos */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    font-weight: bold; /* Aplica negrita al contenedor de inicio de sesión */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaciado entre campos de entrada */
+    width: 100%; /* Ocupa todo el ancho del grupo de formulario */
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 92%; /* Ocupa todo el ancho del grupo de formulario */
+    max-width: 300px; /* Ancho máximo del campo de texto */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    font-weight: bold; /* Aplica negrita a los campos de entrada */
+}
+
+button {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Espaciado interno */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bold; /* Aplica negrita al texto del botón */
+}
+
+button:hover {
+    background-color: #45a049; /* Color del botón al pasar el mouse */
+}
+
+/* Estilo para los botones de radio */
+.radio-group {
+    display: flex; /* Usar flexbox para los botones de radio */
+    justify-content: center; /* Centra horizontalmente los botones de radio */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.radio-group label {
+    margin: 0 10px; /* Espaciado entre los botones de radio */
+    font-weight: bold; /* Aplica negrita a las etiquetas de los botones de radio */
+}
+
+.a {
+    text-align: center;
+    font-weight: bold; /* Aplica negrita al texto centrado */
+}
+/*--------------------------------------------------------------------------------*/
