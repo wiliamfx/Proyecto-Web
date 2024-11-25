@@ -1,0 +1,141 @@
+/*Asegura que el contenedor ocupe toda la página */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;}
+
+.contenedorLogin {
+    display: flex;
+    height: 100vh; /* Hace que ocupe toda la altura del navegador */}
+
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+button{
+    width:200PX;
+    height:50px;
+    position:relative;
+    background:rgb(198, 169, 105);
+    text-transform:uppercase;
+    color:white;
+    font-weight:700;
+    letter-spacing:1px;
+    border:none;
+    border-radius: 10px;
+    font-size:15px;
+    outline:none;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    cursor: pointer;
+}
+
+    .ImagenIzquierda{
+        width: 65%; /* Ocupa el 60% del ancho */
+        height: 100%; /* Ocupa todo el alto */
+        overflow: hidden; /* Asegura que no haya desbordamiento */}
+    .ImagenIzquierda img {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        height: 100%; /* Ajusta el alto al 100% del contenedor */
+        object-fit: cover; /* Hace que la imagen mantenga proporción y rellene */}
+
+
+.Derecha {
+    flex: 1; 
+    padding: 20px;
+    background-color: rgb(255, 255, 236); }
+input{
+    width: 92%; /* Ocupa todo el ancho del grupo de formulario */
+    height:25px;
+    max-width: 300px; /* Ancho máximo del campo de texto */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    font-weight: bold; 
+    margin-right: 30px;}
+
+/* Estilo para la imagen del lado derecho */
+
+
+.FormDerecha{
+    width: 500px;
+    height: 800px;
+    background-color: rgb(241, 228, 195);
+    border-radius:  16px;
+    margin: 55.5px 86px 62.5px 86px ;}
+
+
+
+.Der-Logo img{
+    margin: 75px 150px 0px 150px;
+    width: 200px;
+    height: auto;
+}
+
+.Der-Login{
+    position: relative;
+    bottom: 30px;
+    margin: 10px;
+}
+.Der-Login h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.Der-Form{
+    position: relative;
+    bottom: 62.5px;
+    width: 440px;
+    height: 375px;
+    margin: 30px 30px;
+    background-color: 0;
+}
+
+.form-user{
+    margin : 0px 75px;
+}
+.form-user label{
+    position: relative;
+    left: 5px;
+}
+.form-password{
+    margin : 0px 75px;
+}
+.form-password label{
+    position: relative;
+    left: 5px;
+}
+.password-icon {
+    float: right;
+    position: relative;
+    margin: -25px 10px 0 0;
+    cursor: pointer;
+}
+
+
+
+.buttonBox{
+    margin: 10px 120px 20px 120px;
+    width: 150px;
+    height: auto;
+}
+#seventh>button{
+    border:1px solid rgba(255, 255, 255, 0);
+    transition:all .5s ease-in-out;
+}
+#seventh:hover button{
+    border:1px solid white;
+    font-size:20px;
+}
+
+.olvido_contrasena{
+    position: relative;
+    bottom: 50px;
+    margin: 20px 140px 20px 140px;
+}
+.olvido_contrasena a{
+    color: rgb(89, 126, 82);
+}
