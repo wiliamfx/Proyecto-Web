@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="Login_Styles/LoginStyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="contenedorLogin">
+
+        <div class="ImagenIzquierda">
+            <img src="Login_Imagenes/Login_banner.png" alt="Imagen al lado Izquierdo">
+        </div>
+            
+        <div class="Derecha">
+            <div class="FormDerecha">
+                <div class="Der-Logo">
+                    <img src="Login_Imagenes/LogoSaborLatino.png" alt="logo">
+                </div>
+                <br>
+                <div class="Der-Login">
+                    <h1>Iniciar Sesion</h1>
+                </div>
+                <br>
+                <div class="Der-Form">
+                    <form method="post" action="./Login" id="loginForm" onsubmit="return handleLogin(event)">
+                        <div class="form-user">
+                            <label for="text">Correo electronico</label>
+                            <input type="email" name="text" class = "form-control" placeholder="Ingrese su correo electronico" required class="a" />
+                        </div>
+
+                        <br>
+
+                        <div class="form-password">
+                            <label for="departamento">Contraseña:</label>
+
+                            <input type="password" name="password" class="form-control password1" value="" placeholder="Ingrese su contraseña" />
+                            <span class="fa fa-fw fa-eye password-icon show-password"></span>
+                            
+                        </div>
+
+                        <br>
+
+                        <div id="seventh" class="buttonBox">
+                            <button type="submit">Ingresar</button>
+                            <label id="errorMessage" style="color: red; display: none;"></label>
+                        </div>
+                        <br>
+                        <div class = "olvido_contrasena">
+                            <a href="olvido_contrasena.html"><u><b>Olvide mi contraseña</b></u></a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script/LoginScript.js"></script>
+</body>
+</html>
